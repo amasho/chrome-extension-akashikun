@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chrome Extension Akashikun</title>
+    <link rel="stylesheet" href="css/tailwind.min.css" type="text/css" />
+    <script src="js/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="w-36 flex flex-col items-center justify-center m-6">
+      <h1 class="font-bold mb-3">AKASHI 出退勤</h1>
+      <div class="flex">
+        <div class="mr-2">
+          <button id="begin" class="w-16 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            出勤
+          </button>
+        </div>
+        <div class="ml-2">
+          <button id="finish" class="w-16 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            退勤
+          </button>
+        </div>
+      </div>
+      <p id="status" class="font-bold mt-3"></p>
+    </div>
+
+    <script src="js/attendance.js"></script>
+  </body>
+</html>

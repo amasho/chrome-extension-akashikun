@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Extension for AKASHI",
+  "version": "0.0.1",
+  "description": "AKASHIの出勤/退勤打刻するやつ",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "img/akashi_icon.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": ["*://atnd.ak4.jp/*", "storage"],
+  "icons": {
+    "128": "img/akashi_icon.png"
+  }
+}
